@@ -99,8 +99,9 @@ function tooltipRender(data) {
 
 
 let margin = { top: 20, right: 20, bottom: 60, left: 80 };
-let width = 810 - margin.left - margin.right;
-let height = 500 - margin.top - margin.bottom;
+let width = document.getElementById("chart-view").getBoundingClientRect().width- margin.left - margin.right;
+let height = document.getElementById("chart-view").getBoundingClientRect().height - margin.top - margin.bottom;
+height = height * 0.9;
 let activeYear = "";
 
 
@@ -113,9 +114,7 @@ d3.select('#chart-view')
 let tooltip = d3.select('.tooltip');
 
 d3.select('#chart-view')
-            .append('svg').classed('plot-svg', true)
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", height + margin.top + margin.bottom);
+            .append('svg').classed('plot-svg', true);
 
 let svgGroup = d3.select('#chart-view').select('.plot-svg').append('g').classed('wrapper-group', true);
 
