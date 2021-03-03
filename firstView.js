@@ -9,7 +9,7 @@ async function utahTaz() {
     let  projection = d3.geoConicConformal()
                   .parallels([40 + 43/60, 41 + 47/60])
                   .center([0, 41])
-                  .scale(document.getElementById("chart-view").getBoundingClientRect().height * 75)
+                  .scale(36000)
                   .rotate([111 + 30 / 60, 0]);
               
 
@@ -26,10 +26,7 @@ async function utahTaz() {
     if (!d3.select("#legendG").empty()) {
         d3.select("#legendG").remove();
     };
-
-let trans_w = document.getElementById("chart-view").getBoundingClientRect().width * -0.1 +100 ;
-let trans_h = document.getElementById("chart-view").getBoundingClientRect().height * 0.2 + 50; 
-
+    
     // Bind data and create one path per GeoJSON feature
     d3.select("#mapLayer").selectAll("path")
         .data(json.features)
@@ -37,10 +34,10 @@ let trans_h = document.getElementById("chart-view").getBoundingClientRect().heig
         .attr("d", path)
         .style('opacity', '0.5')
         .style("fill","grey")
-        .attr("transform", "translate(" + trans_w +","+ trans_h + ")");    
+        .attr("transform", "translate(50," +180 + ")");    
+    
 }   
 
-//"translate(" + toString(-1000), + ","+ "0" + ")"
 async function utahPollution() {
     
     if (!d3.select("#legendG").empty()) {
