@@ -28,7 +28,7 @@ async function utahTaz() {
     };
 
 let trans_w = document.getElementById("chart-view").getBoundingClientRect().width * -0.1 +100 ;
-let trans_h = document.getElementById("chart-view").getBoundingClientRect().height * 0.2 + 100; 
+let trans_h = document.getElementById("chart-view").getBoundingClientRect().height * 0.2 + 50; 
 
     // Bind data and create one path per GeoJSON feature
     d3.select("#mapLayer").selectAll("path")
