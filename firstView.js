@@ -1,27 +1,27 @@
 async function utahTaz() {
 
-    // let width = 600;
-    // let height = 1500;
+     let width = document.getElementById("chart-view").getBoundingClientRect().width*0.8;
+     let height = document.getElementById("chart-view").getBoundingClientRect().height*0.8;
     // // let svg = d3.select("#mapLayer").append("svg")
     // // .attr("width",width)
     // // .attr("height",height);
+
+    // This converts the projected lat/lon coordinates into an SVG path string
+    //let path = d3.geoPath()
+        //.projection(projection);
+     
+    // Load in GeoJSON data
+    let json = await d3.json("/data/utah_geo.json");
+
+    let Busjson = await d3.json("/data/busRouteTAZ.json");
     
-    let  projection = d3.geoConicConformal()
-                  .parallels([40 + 43/60, 41 + 47/60])
-                  .center([0, 41])
-                  .scale(36000)
-                  .rotate([111 + 30 / 60, 0]);
-              
+    let projection = d3.geoIdentity()
+   .reflectY(true).fitSize([width,height],json);         
 
     // This converts the projected lat/lon coordinates into an SVG path string
     let path = d3.geoPath()
         .projection(projection);
-     
-    // Load in GeoJSON data
-    let json = await d3.json("/data/utah_geo.json");
-    console.log(json);
-    let Busjson = await d3.json("/data/busRouteTAZ.json");
-    
+
 
     if (!d3.select("#legendG").empty()) {
         d3.select("#legendG").remove();

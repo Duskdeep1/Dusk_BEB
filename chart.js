@@ -98,10 +98,10 @@ function tooltipRender(data) {
 // read route_service data
 
 
-let margin = { top: 20, right: 20, bottom: 60, left: 80 };
+let margin = { top: 20, right: 20, bottom: 20, left: 80 };
 let width = document.getElementById("chart-view").getBoundingClientRect().width- margin.left - margin.right;
 let height = document.getElementById("chart-view").getBoundingClientRect().height - margin.top - margin.bottom;
-height = height * 0.9;
+height = height * 0.6;
 let activeYear = "";
 
 
@@ -196,8 +196,8 @@ circles.on('mouseover', function (d, i) {
         .duration(200)
         .style("opacity", .9);
     tooltip.html(tooltipRender(d) + "<br/>")
-        .style("left", (d3.event.pageX) + "px")
-        .style("top", (d3.event.pageY - 28) + "px");
+        .style("left", (d3.event.pageX *0.1) + "px")
+        .style("top", (d3.event.pageY *0.5) + "px");
 
 });
 //hover function for country selection
