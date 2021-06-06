@@ -1,7 +1,8 @@
 async function utahTaz() {
 
-     let width = document.getElementById("chart-view").getBoundingClientRect().width*0.8;
-     let height = document.getElementById("chart-view").getBoundingClientRect().height*0.8;
+     let width = document.getElementById("chart-view").getBoundingClientRect().width*0.7;
+     let height = document.getElementById("chart-view").getBoundingClientRect().height*0.85;
+
     // // let svg = d3.select("#mapLayer").append("svg")
     // // .attr("width",width)
     // // .attr("height",height);
@@ -34,7 +35,7 @@ async function utahTaz() {
         .attr("d", path)
         .style('opacity', '0.5')
         .style("fill","grey")
-        .attr("transform", "translate(50," +180 + ")");    
+        .attr("transform", "translate(50," + 20 + ")");    
     
 }   
 

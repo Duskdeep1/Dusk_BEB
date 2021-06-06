@@ -125,6 +125,7 @@ body {
               <g id="cityLayer"></g>
             </svg>
          </div>
+
          <div class="column middle">
         </div>
 
@@ -139,7 +140,6 @@ body {
             <div class='wrap'>
               <p id="value"></p>
               <div id="slider">
-                
               </div>
             </div>
           </div>
@@ -170,65 +170,74 @@ body {
       }
 }
       </script>
+  <div class = "text">
+    <div class="text description">
+      <h2>Background</h2>
+      <p>
+          Environmental concerns due to fossil fuel consumption and emissions drive transportation industry to shift
+          towards low-impact and sustainable energy sources. Public transit system, as an integral part of multimodal
+          transportation ecosystem, has been supporting such shift by exploring the adoption of electric vehicles. In recent
+          years, the advancement in <strong>Battery Electric Buses (BEBs)</strong> and their supporting infrastructure technology made
+          them a viable replacement for diesel and <Strong>Compressed Natural Gas (CNG) buses</Strong>. Yet, it remains a challenge on
+          how to optimally deploy the BEB system due to its unique spatio-temporal characteristics.  
+      </p>
+      <p>
+          <strong>Utah Transit Authority (UTA)</strong>, the public transportation provider throughout the Wasatch Front of Utah, has already begun the electrification of its bus fleet starting from 2016. 
+          <a href="https://www.rideuta.com/news/2016/04/UTA-Announces-Plans-for-All-Electric-Buses" target = "_blank" title="The news from UTASocial">5 BEBs have been brought to service</a>, 
+          among which three were used on route 2 and two served the University of Utah campus. After the successful initial release of BEBs
+          , UTA has been working with the University of Utah to further study the possiblility of full electrification.
+      </p>
+      <h2>Challenges</h2>
+      <p>While BEB and its supporting infrastructure have been commercialized
+          and gradually adopted, how to optimally deploy the BEB system
+          remains a challenge due to several unique spatio-temporal characteristics
+          associated with the system itself. First, to support long daily operation
+          time and high daily mileage, some BEBs would require both
+          periodic on-route charging at bus terminals and overnight charging at
+          bus garages. A careful planning for the optimal locations of on-route
+          charging stations and overnight in-depot charging stations is necessary
+          to efficiently serve the BEBs while keeping the cost minimal. Second,
+          the space-time trajectories of BEBs should fit into current transit vehicle
+          operation routes and schedules as much as possible, to enable smooth
+          transition from traditional diesel or Compressed Natural Gas (CNG)  
+          buses to BEBs. The concern for potential interference with current operation
+          routes and schedule would impede the acquisition of BEBs. It
+          thus requires a sophisticated spatio-temporal analytical method to determine
+          how to spatially and temporally integrate BEBs into current
+          public transit system without interference with current operation routes
+          and schedules.</p>
+      <h2>Related work</h2>
 
-  <div id="description">
-    <h2>Background</h2>
-    <p>
-        Environmental concerns due to fossil fuel consumption and emissions drive transportation industry to shift
-        towards low-impact and sustainable energy sources. Public transit system, as an integral part of multimodal
-        transportation ecosystem, has been supporting such shift by exploring the adoption of electric vehicles. In recent
-        years, the advancement in <strong>Battery Electric Buses (BEBs)</strong> and their supporting infrastructure technology made
-        them a viable replacement for diesel and <Strong>Compressed Natural Gas (CNG) buses</Strong>. Yet, it remains a challenge on
-        how to optimally deploy the BEB system due to its unique spatio-temporal characteristics.  
-    </p>
+      <p>
+          <a href="https://www.sciencedirect.com/science/article/pii/S0966692317306294?via%3Dihub" target = "_blank" title="Optimizing the spatio-temporal deployment of battery electric bus system">Wei et al. (2018)</a> developed an innovative spatio-temporal
+          analytical framework to assist transit agencies in identifying the optimal
+          deployment for the BEB system. Specifically, a spatio-temporal
+          optimization model is developed to minimize the cost of replacing a
+          certain number of diesel or CNG buses (part of the fleet) with BEBs,
+          while in compliance with existing bus operation routes and schedules.
+          The proposed model can be used to determine the optimal spatiotemporal
+          allocation of the BEBs, as well as the associated on-route
+          charging stations and in-depot charging stations. The network data is obtained from UTA in year 2016.
+      </p>
 
-    <p>
-        <strong>Utah Transit Authority (UTA)</strong>, the public transportation provider throughout the Wasatch Front of Utah, has already begun the electrification of its bus fleet starting from 2016. 
-        <a href="https://www.rideuta.com/news/2016/04/UTA-Announces-Plans-for-All-Electric-Buses" target = "_blank" title="The news from UTASocial">5 BEBs have been brought to service</a>, 
-        among which three were used on route 2 and two served the University of Utah campus. After the successful initial release of BEBs
-        , UTA has been working with the University of Utah to further study the possiblility of full electrification.
-    </p>
+      <p>
+          In addition, <a href="https://ieeexplore.ieee.org/document/9310704" target = "_blank" title="Bi-Objective Optimization for Battery Electric Bus Deployment Considering Cost and Environmental Equity">Yirong et al (2020)</a> futher enrich the strategical deployment framework of BEB by incorporating a second objective, environmental equity. The research develops a bi-objective spatio-temporal optimization model for the strategic deployment of BEB. 
+          The first objective is to minimize the cost of purchasing BEB and installing both on-route and in-depot charging stations while
+          maintaining current bus schedules. The other objective is to maximize environmental equity by incorporating the disadvantaged population in the decision-making process. One main reason is that research on social vulnerability found that <strong>low socioeconomic status (SES)</strong> groups often experience
+          a higher concentration of air pollutants, due to the low value of lands and the closeness to income-earning opportunities. The formulation is presented on the right-hand side.
+      </p>
+    </div>
 
-    <h2>Challenges</h2>
-
-    <p>While BEB and its supporting infrastructure have been commercialized
-        and gradually adopted, how to optimally deploy the BEB system
-        remains a challenge due to several unique spatio-temporal characteristics
-        associated with the system itself. First, to support long daily operation
-        time and high daily mileage, some BEBs would require both
-        periodic on-route charging at bus terminals and overnight charging at
-        bus garages. A careful planning for the optimal locations of on-route
-        charging stations and overnight in-depot charging stations is necessary
-        to efficiently serve the BEBs while keeping the cost minimal. Second,
-        the space-time trajectories of BEBs should fit into current transit vehicle
-        operation routes and schedules as much as possible, to enable smooth
-        transition from traditional diesel or Compressed Natural Gas (CNG)
-        buses to BEBs. The concern for potential interference with current operation
-        routes and schedule would impede the acquisition of BEBs. It
-        thus requires a sophisticated spatio-temporal analytical method to determine
-        how to spatially and temporally integrate BEBs into current
-        public transit system without interference with current operation routes
-        and schedules.</p>
-          
-    <h2>Related work</h2>
-
-    <p>
-        <a href="https://www.sciencedirect.com/science/article/pii/S0966692317306294?via%3Dihub" target = "_blank" title="Optimizing the spatio-temporal deployment of battery electric bus system">Wei et al. (2018)</a> developed an innovative spatio-temporal
-        analytical framework to assist transit agencies in identifying the optimal
-        deployment for the BEB system. Specifically, a spatio-temporal
-        optimization model is developed to minimize the cost of replacing a
-        certain number of diesel or CNG buses (part of the fleet) with BEBs,
-        while in compliance with existing bus operation routes and schedules.
-        The proposed model can be used to determine the optimal spatiotemporal
-        allocation of the BEBs, as well as the associated on-route
-        charging stations and in-depot charging stations. The network data is obtained from UTA in year 2016.
-    </p>
-
-    <p>
-        In addition, <a href="https://ieeexplore.ieee.org/document/9310704" target = "_blank" title="Bi-Objective Optimization for Battery Electric Bus Deployment Considering Cost and Environmental Equity">Yirong et al (2020)</a> futher enrich the strategical deployment framework of BEB by incorporating a second objective, environmental equity. The research develops a bi-objective spatio-temporal optimization model for the strategic deployment of BEB. 
-        The first objective is to minimize the cost of purchasing BEB and installing both on-route and in-depot charging stations while
-        maintaining current bus schedules. The other objective is to maximize environmental equity by incorporating the disadvantaged population in the decision-making process. One main reason is that research on social vulnerability found that <strong>low socioeconomic status (SES)</strong> groups often experience
-         a higher concentration of air pollutants, due to the low value of lands and the closeness to income-earning opportunities.
-    </p>
-  
-  </body>
+    <div class = "text formulation1">
+        <h2>Formulation</h2>
+        <p>
+          The bi-objective optimization framework is structured as following:
+      </p>
+        <img src="formulation1.png">
+    </div>
+    <div class = "text formulation2">
+      <img src="formulation2.png">
+  </div>
+  </div>
+</body>
+</html>
