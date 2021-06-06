@@ -37,7 +37,7 @@
     width: 25%;
     height: 100%;
     padding-left: 10%;
-    padding-right: 12.5%;
+    padding-right: 8.5%;
 
   }
 
@@ -65,9 +65,6 @@
     font-weight: 450;
     margin-bottom: 12px;
     margin-top: 0px;
-  }
-  .description p {
-    margin: 0;
   }
 
   
@@ -178,7 +175,7 @@ margin-bottom: 30%;
   }
 .column.middle {
   width: 35%;
-  height: 180%;
+  height: 160%;
   }
 
  .row:after {
