@@ -131,21 +131,7 @@ html {
   height: 100%;
 }
 
-div.tooltip {
-width: 35%;
-height: 13%;
-background-color: black;
-color: #fff;
-text-align: justify;
-border-radius: 6px;
-padding: 5px 5px 5px 5px ;
-position: relative;
-z-index: 1;
-top:-30px;
-left:10%;
-transform:translateX(20%);
-pointer-events: none;
-}
+
 
 
 .tooltip h2 {
@@ -174,8 +160,8 @@ margin-bottom: 30%;
     padding-right: 10%;
   }
 .column.middle {
-  width: 35%;
-  height: 160%;
+  width: 30%;
+  height: 200%;
   }
 
  .row:after {

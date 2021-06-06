@@ -35,7 +35,7 @@ async function utahTaz() {
         .attr("d", path)
         .style('opacity', '0.5')
         .style("fill","grey")
-        .attr("transform", "translate(50," + 0 + ")");    
+        .attr("transform", "translate(50," + 180 + ")");    
     
 }   
 
@@ -342,7 +342,7 @@ async function utahemp() {
 
     d3.select("#mapLayer").append("g")
         .attr("id", "legendG")
-        .attr("transform", "translate(352, 60)")
+        .attr("transform", "translate(345, 60)")
         .call(HHPOPLegend);
 } 
 
