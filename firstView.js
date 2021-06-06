@@ -97,7 +97,7 @@ async function utahPollution() {
 
     d3.select("#mapLayer").append("g")
         .attr("id", "legendG")
-        .attr("transform", "translate(352, 60)")
+        .attr("transform", "translate(20, 60)")
         .call(Pollutionlegend);
 }   
 
@@ -158,7 +158,7 @@ async function utahLowIncomePop() {
 
     d3.select("#mapLayer").append("g")
         .attr("id", "legendG")
-        .attr("transform", "translate(352, 60)")
+        .attr("transform", "translate(20, 60)")
         .call(LowIncomePopLegend);
 } 
 
@@ -223,7 +223,7 @@ async function utahAverageIncome() {
 
     d3.select("#mapLayer").append("g")
         .attr("id", "legendG")
-        .attr("transform", "translate(352, 60)")
+        .attr("transform", "translate(20, 60)")
         .call(AvgIncLegend);
    
 } 
@@ -283,7 +283,7 @@ async function utahHHPop() {
 
     d3.select("#mapLayer").append("g")
         .attr("id", "legendG")
-        .attr("transform", "translate(352, 60)")
+        .attr("transform", "translate(20, 60)")
         .call(HHPOPLegend);
 } 
 
@@ -342,7 +342,7 @@ async function utahemp() {
 
     d3.select("#mapLayer").append("g")
         .attr("id", "legendG")
-        .attr("transform", "translate(345, 60)")
+        .attr("transform", "translate(20, 60)")
         .call(HHPOPLegend);
 } 
 
