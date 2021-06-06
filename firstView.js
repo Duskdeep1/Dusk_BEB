@@ -35,7 +35,7 @@ async function utahTaz() {
         .attr("d", path)
         .style('opacity', '0.5')
         .style("fill","grey")
-        .attr("transform", "translate(50," + 20 + ")");    
+        .attr("transform", "translate(50," + 0 + ")");    
     
 }   
 
